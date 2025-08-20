@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css">
+    <style>
+        .gradientHero {
+            background-color: hsla(219, 82%, 51%, 1);
+            background-image: radial-gradient(circle at 50% 0%, hsla(319, 0%, 0%, 1) 49.15975941515135%, transparent 102.23193813062571%);
+            background-blend-mode: normal;
+        }
+
+
+
+        .gradientSecond {
+            background-color: hsla(219.3975903614458, 0%, 0%, 1);
+            background-image: radial-gradient(circle at 0% 99%, hsla(229.61538461538464, 0%, 0%, 1) 0%, transparent 67%), radial-gradient(circle at 46% 94%, hsla(229.61538461538467, 0%, 0%, 1) 0%, transparent 81%), radial-gradient(circle at 93% 95%, hsla(219.3975903614458, 77%, 41%, 1) 0%, transparent 66%), radial-gradient(circle at 89% 8%, hsla(219.3975903614458, 77%, 41%, 1) 0%, transparent 150%);
+            background-blend-mode: normal, normal, normal, normal;
+        }
+
+        .innerShadow {
+            box-shadow: rgba(24, 78, 185, 0.65) 0px -30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+        }
+
+        /* cursor  */
+
+        /* Sembunyikan kursor default di area konten */
+        .hide-cursor {
+            cursor: none;
+        }
+
+        /* Styling untuk cursor box */
+        .cursor-box, .magnetBtn {
+            transform: translate(-50%, -50%);
+            /* agar pusat box mengikuti kursor */
+            z-index: 9999;
+        }
+    </style>
+</head>
+
+<body class="bg-black">
+    <!-- Navbar -->
+    <nav
+        class="z-50 sticky top-0 left-0 w-full px-10 flex justify-between items-center py-4 bg-black/1 backdrop-blur-sm">
+        <div class="w-[140px] h-[30px]  flex justify-center items-center ">
+            <!-- <img class="w-full h-full " src="" alt=""> -->
+        </div>
+
+        <ul class="flex space-x-10 text-sm px-5 py-2  text-white">
+            <li>Our Service</li>
+            <li>Our Work</li>
+            <li>About</li>
+
+            <li>Contact Us</li>
+
+        </ul>
+
+        <div class="w-[140px] flex justify-end">
+            <button class="px-5 py-2 bg-[#1851BE] border-white/20 border rounded-full">
+                <p class="text-white/80 "><i class="fa-solid fa-language mr-1"></i>En</p>
+            </button>
+        </div>
+
+    </nav>
+    <!-- page1 -->
+    <section class="duration-300 w-full h-[900px] px-10 pb-10 pt-5 bg-black">
+        <div class="relative w-full h-full gradientHero rounded-3xl overflow-hidden">
+            <div class=" relative w-flul h-full flex justify-center items-center">
+                <div class="absolute text-center ">
+                    <button class="px-6 py-3 bg-white/20 border-white/20 border rounded-full">
+                        <p class="text-white/80 text-xs">Bluesoft IOT - B2B Companies</p>
+                    </button>
+                    <h1 id="bigText" class="z-10 mt-3 text-white text-8xl leading-tight font-medium">Own Agentic AI<br>
+                        AI that thinks, plans,<br> and acts</h1>
+                    <div class="z-0 mt-5 w-full flex justify-center">
+                        <h3 id="descText" class="w-[500px] text-white/80">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis a facilis, neque repellat
+                            accusantium aperiam voluptatibus suscipit perspiciatis odit reprehenderit?
+                        </h3>
+                    </div>
+                    <div class="flex justify-center mt-5 space-x-5">
+                        <button class="px-6 py-3 bg-white/20 border-white/20 border rounded-full">
+                            <p class="text-white/80">Get Started <i class="fa-solid fa-arrow-right -rotate-45"></i></p>
+                        </button>
+                        <button class="px-6 py-3 bg-white border-white/20 border rounded-full">
+                            <p class="text-black font-bold">Get Explore </p>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="absolute bottom-0 right-0 p-10">
+                <div class="w-[150px] ">
+                    <p class="font-medium text-white">Agen Ai</p>
+                    <div id="indicators" class="space-x-2 flex mt-2">
+                        <div class="w-full h-1 rounded-sm bg-white"></div>
+                        <div class="w-full h-1 rounded-sm bg-white/40"></div>
+                        <div class="w-full h-1 rounded-sm bg-white/40"></div>
+                        <div class="w-full h-1 rounded-sm bg-white/40"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="absolute bottom-0 left-0 p-10">
+                <div class="flex space-x-2">
+                    <button class="w-7 h-7 bg-white border-white/20 border rounded-full">
+                        <i class="fa-solid fa-arrow-right rotate-90"></i>
+                    </button>
+                    <div
+                        class="rounded-full text-center flex items-center px-3 bg-white/20 border-white/20 border text-white font-light">
+                        Our Location</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Service -->
+    <section class="w-full mt-40 px-10 overflow-hidden">
+        <div class="w-full flex justify-center items-center py-10">
+            <h1 class="text-5xl text-center font-semibold leading-tight text-white">Explore Our Services,<br> Solutions
+                for Your Digital Needs</h1>
+        </div>
+        <div class="relative " style="cursor: none !important;">
+            <div class="z-10 flex mt-10 w-full h-[800px] ">
+                <!-- Kiri -->
+                <div
+                    class="relative overflow-hidden btnGroup cursor-none group   w-[500px] flex flex-col justify-between mr-10 border border-white/10 text-white rounded-2xl bg-white/0 backdrop-blur-[150px]">
+                    <div
+                        class="p-5 opacity-65 group-hover:rotate-12 rotate-0 origin-bottom-left duration-200 cursor-none">
+                        <img class="w-72 group-hover:w-80" src="/assets/img/phone.png " alt="">
+                    </div>
+                    <div class="w-full p-5 cursor-none ">
+
+                        <div class="flex items-center cursor-none">
+                            <div
+                                class=" w-10 h-10 bg-white/30 border border-white/30 rounded-full flex justify-center items-center cursor-none">
+                                <i class="fa-solid fa-mobile "></i>
+                            </div>
+                            <h3 class="text-3xl ml-3">Mobile Apps</h3>
+
+                        </div>
+                        <p
+                            class="text-white/80 mt-1 font-light text-sm block group-hover:hidden opacity-100 group-hover:opacity-0  duration-200 cursor-none">
+                            Lorem ipsum dolor sit amet consectetur,
+                            adipisicing
+                            elit.
+                            Et iusto quidem praesentium odio ipsa culpa, officia voluptates impedit adipisci
+                            obcaecati eveniet porro quas ea nihil rerum reprehenderit dolor dolorem labore!</p>
+                    </div>
+                    <!-- Tombol tersembunyi di awal -->
+                    <button
+                        class="magnetBtn absolute bg-white opacity-0 group-hover:opacity-100 backdrop-blur-2xl text-black w-[70px] h-[70px]  rounded-full cursor-none">
+                        <i class="fa-solid fa-arrow-right text-2xl -rotate-45 "></i>
+                    </button>
+                </div>
+
+                <!-- Kanan -->
+                <div class="flex-1 flex flex-col space-y-10 cursor-none">
+                    <!-- Atas (2 kolom) -->
+                    <div class="flex space-x-10 flex-1 cursor-none">
+                        <div
+                            class=" relative overflow-hidden btnGroup cursor-none group  flex items-start flex-1 border border-white/10 rounded-2xl bg-white/0 backdrop-blur-[150px] text-white">
+                            <div class="w-full p-5 cursor-none">
+
+                                <div class="flex items-center cursor-none">
+                                    <div
+                                        class=" w-10 h-10 bg-white/30 border border-white/30 rounded-full flex justify-center items-center">
+                                        <i class="fa-solid fa-brain"></i>
+                                    </div>
+                                    <h3 class="text-3xl ml-3">AI Agents Development</h3>
+
+                                </div>
+                                <p
+                                    class="cursor-none text-white/80 mt-1 font-light text-sm w-[400px]  opacity-100 group-hover:opacity-0  duration-200">
+                                    Lorem ipsum dolor sit amet
+                                    consectetur,
+                                    adipisicing elit.
+                                    Et iusto quidem praesentium odio ipsa culpa, officia voluptates impedit adipisci
+                                    obcaecati eveniet porro quas ea nihil rerum reprehenderit dolor dolorem labore!</p>
+                            </div>
+
+                            <div
+                                class="cursor-none absolute -bottom-32 group-hover:-bottom-40 -right-5 group-hover:right-5 opacity-65  group-hover:rotate-12 rotate-0 origin-bottom-right duration-200">
+                                <img class="w-80 group-hover:w-96 duration-200" src="/assets/img/brain.png" alt="">
+                            </div>
+
+                            <button
+                                class="magnetBtn absolute bg-white opacity-0 group-hover:opacity-100 backdrop-blur-2xl text-black w-[70px] h-[70px]  rounded-full cursor-none">
+                                <i class="fa-solid fa-arrow-right text-2xl -rotate-45 "></i>
+                            </button>
+                        </div>
+                        <div
+                            class=" relative overflow-hidden btnGroup cursor-none group  flex items-start flex-1 border border-white/10 rounded-2xl bg-white/0 backdrop-blur-[150px] text-white">
+                            <div class="w-full p-5 cursor-none">
+                                <div class="flex items-center cursor-none">
+                                    <div
+                                        class="cursor-none w-10 h-10  bg-white/30 border border-white/30 rounded-full flex justify-center items-center">
+                                        <i class="fa-solid fa-square-binary"></i>
+                                    </div>
+                                    <h3 class="text-3xl ml-3 cursor-none">Software Solutions</h3>
+                                </div>
+                                <p
+                                    class="cursor-none text-white/80 mt-1 font-light text-sm opacity-100 group-hover:opacity-0  duration-200">
+                                    Lorem ipsum dolor sit amet
+                                    consectetur,
+                                    adipisicing elit.
+                                    Et iusto quidem praesentium odio ipsa culpa, officia voluptates impedit adipisci
+                                    obcaecati eveniet porro quas ea nihil rerum reprehenderit dolor dolorem labore!</p>
+                            </div>
+
+                            <div
+                                class="cursor-none absolute -bottom-3 right-3 opacity-65  group-hover:rotate-12 rotate-0 origin-top-right duration-200">
+                                <img class="w-64 group-hover:w-72 duration-200" src="/assets/img/software.png" alt="">
+                            </div>
+
+                            <button
+                                class="magnetBtn absolute bg-white opacity-0 group-hover:opacity-100 backdrop-blur-2xl text-black w-[70px] h-[70px]  rounded-full cursor-none">
+                                <i class="fa-solid fa-arrow-right text-2xl -rotate-45 "></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Bawah -->
+                    <div
+                        class=" relative overflow-hidden btnGroup cursor-none group  flex-1 rounded-2xl border border-white/10 bg-white/0 backdrop-blur-[150px] text-white">
+                        <div class=" p-5 w-[700px]">
+
+                            <div class="flex items-center cursor-none">
+                                <div
+                                    class=" w-10 h-10 bg-white/30 border border-white/30 rounded-full flex justify-center items-center">
+                                    <i class="fa-solid fa-warehouse"></i>
+                                </div>
+                                <h3 class="text-3xl ml-3">Warehouse Management System (WMS)</h3>
+
+                            </div>
+                            <p
+                                class="cursor-none text-white/80 mt-1 font-light text-sm opacity-100 group-hover:opacity-0  duration-200">
+                                Lorem ipsum dolor sit amet consectetur,
+                                adipisicing
+                                elit.
+                                Et iusto quidem praesentium odio ipsa culpa, officia voluptates impedit adipisci
+                                obcaecati eveniet porro quas ea nihil rerum reprehenderit dolor dolorem labore!</p>
+                        </div>
+                        <div
+                            class="cursor-none z-20 absolute -bottom-10 -right-5 opacity-65 group-hover:rotate-12 rotate-0 origin-top-right duration-200">
+                            <img class="w-[500px] group-hover:w-[520px]" src="/assets/img/house.png" alt="">
+                        </div>
+
+                        <button
+                            class="z-30 magnetBtn absolute bg-white opacity-0 group-hover:opacity-100 backdrop-blur-2xl text-black w-[70px] h-[70px]  rounded-full cursor-none">
+                            <i class="fa-solid fa-arrow-right text-2xl -rotate-45 "></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div
+                class=" relative btnGroup cursor-none group  flex items-end justify-between overflow-hidden  z-10 border border-white/10 mt-10 w-full h-[500px] rounded-2xl bg-white/0 backdrop-blur-[150px] text-white">
+                <div class="opacity-65 group-hover:-rotate-12 rotate-0 origin-top-left duration-200">
+                    <img class="w-[700px] group-hover:w-[500px] duration-200" src="/assets/img/machine.png" alt="">
+                </div>
+                <div class="w-[700px] p-5">
+
+                    <div class="flex items-center cursor-none">
+                        <div
+                            class="cursor-none w-10 h-10 bg-white/30 border border-white/30 rounded-full flex justify-center items-center">
+                            <i class="fa-solid fa-desktop"></i>
+                        </div>
+                        <h3 class="cursor-none text-3xl ml-3">Manufacturing Execution System (MES)</h3>
+
+                    </div>
+                    <p class="cursor-none text-white/80 mt-1 font-light text-sm  duration-200">Lorem ipsum dolor sit
+                        amet consectetur, adipisicing
+                        elit.
+                        Et iusto quidem praesentium odio ipsa culpa, officia voluptates impedit adipisci
+                        obcaecati eveniet porro quas ea nihil rerum reprehenderit dolor dolorem labore!</p>
+                </div>
+                <button
+                    class="z-30 magnetBtn absolute bg-white opacity-0 group-hover:opacity-100 backdrop-blur-2xl text-black w-[70px] h-[70px]  rounded-full cursor-none">
+                    <i class="fa-solid fa-arrow-right text-2xl -rotate-45 "></i>
+                </button>
+
+            </div>
+
+            <!-- hiasan -->
+            <div class="-z-10 absolute top-52 left-72 w-[400px] h-[400px] blur-[130px] rounded-full bg-[#1851BE]">
+            </div>
+
+            <div class="-z-10 absolute -top-32 -right-32 w-[300px] h-[300px] blur-[130px] rounded-full bg-[#1851BE]">
+            </div>
+
+            <div class="-z-10 absolute -bottom-52 -right-52 w-[700px] h-[700px] blur-[130px] rounded-full bg-[#1851BE]">
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Our Work -->
+    <section class="w-full h-screen  mt-40 px-10">
+        <div class="w-full flex justify-center items-center py-10">
+            <h1 class="text-5xl text-center font-semibold leading-tight text-white">See how we help businesses<br> grow
+                with technology.</h1>
+        </div>
+        <!-- content -->
+        <div class="mt-10 space-y-10">
+            <!-- content1 -->
+            <div class="group flex w-full space-x-5">
+                <div data-img="/assets/img/dumy.png"
+                    class="hover-target cursor-none | w-full flex justify-between p-5 group-hover:p-10 duration-200 gradientHero innerShadow rounded-3xl">
+                    <div class="flex  space-x-4">
+                        <div class=" w-14 h-14 bg-white rounded-full flex justify-center items-center">
+                            <i class="fa-solid fa-cloud text-lg"></i>
+                        </div>
+                        <div class="text-white flex items-center">
+                            <h3 class="text-2xl font-medium ">PHH Company profile</h3>
+                        </div>
+                    </div>
+                    <div class="h-full flex items-center pr-3 text-white/70">
+                        <i class="fa-solid fa-arrow-right text-3xl -rotate-45 group-hover:-rotate-90 duration-200"></i>
+                    </div>
+                </div>
+            </div>
+            <!-- content2 -->
+            <div class="group flex w-full space-x-5">
+                <div data-img="/assets/img/dumy.png"
+                    class="hover-target cursor-none | w-full flex justify-between p-5 group-hover:p-10 duration-200 gradientHero innerShadow  rounded-3xl">
+                    <div class="flex  space-x-4">
+                        <div class=" w-14 h-14 bg-white rounded-full flex justify-center items-center">
+                            <i class="fa-solid fa-cloud text-lg"></i>
+                        </div>
+                        <div class="text-white flex items-center">
+                            <h3 class="text-2xl font-medium ">PHH Company profile</h3>
+                        </div>
+                    </div>
+                    <div class="h-full flex items-center pr-3 text-white/70">
+                        <i class="fa-solid fa-arrow-right text-3xl -rotate-45 group-hover:-rotate-90 duration-200"></i>
+                    </div>
+                </div>
+            </div>
+            <!-- content3 -->
+            <div class=" group flex w-full space-x-5">
+                <div data-img="/assets/img/dumy.png"
+                    class="hover-target cursor-none | w-full flex justify-between p-5 group-hover:p-10 duration-200 gradientHero innerShadow  rounded-3xl">
+                    <div class="flex  space-x-4">
+                        <div class=" w-14 h-14 bg-white rounded-full flex justify-center items-center">
+                            <i class="fa-solid fa-cloud text-lg"></i>
+                        </div>
+                        <div class="text-white flex items-center">
+                            <h3 class="text-2xl font-medium ">PHH Company profile</h3>
+                        </div>
+                    </div>
+                    <div class="h-full flex items-center pr-3 text-white/70">
+                        <i class="fa-solid fa-arrow-right text-3xl -rotate-45 group-hover:-rotate-90 duration-200"></i>
+                    </div>
+                </div>
+            </div>
+            <!-- content4 -->
+            <div class="group flex w-full space-x-5">
+                <div data-img="/assets/img/dumyphone.png"
+                    class="hover-target cursor-none | relative w-full flex justify-between p-5 group-hover:p-10 duration-200 gradientHero innerShadow  rounded-3xl">
+                    <div class="flex  space-x-4">
+                        <div class=" w-14 h-14 bg-white rounded-full flex justify-center items-center">
+                            <i class="fa-solid fa-cloud text-lg"></i>
+                        </div>
+                        <div class="text-white flex items-center">
+                            <h3 class="text-2xl font-medium ">PHH Company profile</h3>
+                        </div>
+                    </div>
+                    <div class="h-full flex items-center pr-3 text-white/70">
+                        <i class="fa-solid fa-arrow-right text-3xl -rotate-45 group-hover:-rotate-90 duration-200"></i>
+                    </div>
+
+
+                </div>
+            </div>
+            <!-- content5 -->
+            <div class="group flex w-full space-x-5">
+                <div data-img="/assets/img/dumy.png"
+                    class="hover-target cursor-none | w-full flex justify-between p-5 group-hover:p-10 duration-200 gradientHero innerShadow  rounded-3xl">
+                    <div class="flex  space-x-4">
+                        <div class=" w-14 h-14 bg-white rounded-full flex justify-center items-center">
+                            <i class="fa-solid fa-cloud text-lg"></i>
+                        </div>
+                        <div class="text-white flex items-center">
+                            <h3 class="text-2xl font-medium ">PHH Company profile</h3>
+                        </div>
+                    </div>
+                    <div class="h-full flex items-center pr-3 text-white/70">
+                        <i class="fa-solid fa-arrow-right text-3xl -rotate-45 group-hover:-rotate-90 duration-200"></i>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Get in touch -->
+    <section class="relative   w-full mt-40 px-10 ">
+        <div class="w-full justify-center items-center py-10">
+            <h3 class="text-5xl text-white ">Get in Touch with Our Team</h3>
+        </div>
+        <div class="flex space-x-10 ">
+            <div class=" w-full h-full border border-white/10  rounded-2xl bg-white/0 backdrop-blur-[150px] p-8">
+                <div class="w-full    text-white">
+                    <h2 class="text-2xl mb-6 ">Lets Talk About Your Project</h2>
+
+                    <form class="space-y-5">
+                        <!-- Nama -->
+                        <div>
+                            <label class="block text-sm   mb-1">Name</label>
+                            <input type="text" placeholder="Your name"
+                                class="w-full px-4 py-3  border border-white/10 rounded-lg  focus:outline-none bg-transparent" />
+                        </div>
+
+                        <!-- Email -->
+                        <div>
+                            <label class="block text-sm   mb-1">Email</label>
+                            <input type="email" placeholder="you@example.com"
+                                class="w-full px-4 py-3  border border-white/10 rounded-lg  focus:outline-none bg-transparent" />
+                        </div>
+
+                        <!-- Email -->
+                        <div>
+                            <label class="block text-sm   mb-1">Phone number</label>
+                            <input type="email" placeholder="you@example.com"
+                                class="w-full px-4 py-3  border border-white/10 rounded-lg  focus:outline-none bg-transparent" />
+                        </div>
+
+                        <!-- Email -->
+                        <div>
+                            <label class="block text-sm   mb-1">Company Name</label>
+                            <input type="email" placeholder="you@example.com"
+                                class="w-full px-4 py-3  border border-white/10 rounded-lg  focus:outline-none bg-transparent" />
+                        </div>
+
+                        <!-- Pesan -->
+                        <div>
+                            <label class="block text-sm   mb-1">Message</label>
+                            <textarea rows="4" placeholder="Your message..."
+                                class="w-full px-4 py-3  border border-white/10 rounded-lg  focus:outline-none bg-transparent"></textarea>
+                        </div>
+
+                        <div class="w-full flex justify-end">
+                            <!-- Tombol -->
+                            <button class="px-6 py-3 bg-white border-white/20 border rounded-full">
+                                <p class="text-black font-bold ">Submit<i class="ml-2 fa-solid fa-paper-plane"></i></p>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="flex flex-col w-full">
+                <!-- Bagian atas -->
+                <div class="text-white ">
+                    <h2 class="text-2xl mb-2">Prefer a Direct Approach?</h2>
+                    <p class="font-light text-white/80"><i class="fa-solid fa-phone mr-1 text-blue-600"></i>+60 000 000
+                        00
+                    </p>
+                    <p class="font-light text-white/80"><i
+                            class="fa-solid fa-envelope mr-1 text-blue-600"></i>contact@gmail.com</p>
+                    <p class="font-light text-white/80"><i class="fa-solid fa-info mr-1 text-blue-600"></i>Monday to
+                        Friday,
+                        9 AM - 6 PM(GMT)</p>
+                </div>
+
+                <!-- Map isi penuh sisa tinggi -->
+                <div class="flex-1 mt-10">
+                    <iframe class="w-full h-full rounded-2xl"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3952.1174363433503!2d110.3695!3d-7.8014!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a57f85766e0e5%3A0x69a7d5b7cb8d35e5!2sMalioboro%20Yogyakarta!5e0!3m2!1sen!2sid!4v1693022220000!5m2!1sen!2sid"
+                        style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="-z-10 absolute -bottom-52 -left-52 w-[400px] h-[400px] blur-[130px] rounded-full bg-[#1851BE]">
+        </div>
+
+        <!-- <div class="-z-10 absolute top-0 right-0-0 w-[200px] h-[200px] blur-[100px] rounded-full bg-[#1851BE]">
+        </div> -->
+
+        <div class="-z-10 absolute top-40 left-96 w-[400px] h-[400px] blur-[130px] rounded-full bg-[#1851BE]">
+        </div>
+
+        <div class="-z-10 absolute top-40 right-0 w-[300px] h-[300px] blur-[130px] rounded-full bg-[#1851BE]">
+        </div>
+    </section>
+
+
+
+    <footer class="  bg-black/0 backdrop-blur-3xl mt-40">
+        <div class="mx-auto w-full px-10 p-4 py-6 lg:py-8">
+            <div class="md:flex md:justify-between">
+                <div class="mb-6 md:mb-0">
+                    <a href="https://flowbite.com/" class="flex items-center">
+                        <img src="https://flowbite.com/docs/images/logo.svg" class="h-8 me-3" alt="FlowBite Logo" />
+                        <span
+                            class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Flowbite</span>
+                    </a>
+                </div>
+                <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
+                    <div>
+                        <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Resources</h2>
+                        <ul class="text-gray-500 dark:text-gray-400 font-medium">
+                            <li class="mb-4">
+                                <a href="https://flowbite.com/" class="hover:underline">Flowbite</a>
+                            </li>
+                            <li>
+                                <a href="https://tailwindcss.com/" class="hover:underline">Tailwind CSS</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Follow us</h2>
+                        <ul class="text-gray-500 dark:text-gray-400 font-medium">
+                            <li class="mb-4">
+                                <a href="https://github.com/themesberg/flowbite" class="hover:underline ">Github</a>
+                            </li>
+                            <li>
+                                <a href="https://discord.gg/4eeurUVvTy" class="hover:underline">Discord</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Legal</h2>
+                        <ul class="text-gray-500 dark:text-gray-400 font-medium">
+                            <li class="mb-4">
+                                <a href="#" class="hover:underline">Privacy Policy</a>
+                            </li>
+                            <li>
+                                <a href="#" class="hover:underline">Terms &amp; Conditions</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+            <div class="sm:flex sm:items-center sm:justify-between">
+                <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023 <a
+                        href="https://flowbite.com/" class="hover:underline">Flowbite™</a>. All Rights Reserved.
+                </span>
+                <div class="flex mt-4 sm:justify-center sm:mt-0">
+                    <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
+                        <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                            viewBox="0 0 8 19">
+                            <path fill-rule="evenodd"
+                                d="M6.135 3H8V0H6.135a4.147 4.147 0 0 0-4.142 4.142V6H0v3h2v9.938h3V9h2.021l.592-3H5V3.591A.6.6 0 0 1 5.592 3h.543Z"
+                                clip-rule="evenodd" />
+                        </svg>
+                        <span class="sr-only">Facebook page</span>
+                    </a>
+                    <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5">
+                        <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                            viewBox="0 0 21 16">
+                            <path
+                                d="M16.942 1.556a16.3 16.3 0 0 0-4.126-1.3 12.04 12.04 0 0 0-.529 1.1 15.175 15.175 0 0 0-4.573 0 11.585 11.585 0 0 0-.535-1.1 16.274 16.274 0 0 0-4.129 1.3A17.392 17.392 0 0 0 .182 13.218a15.785 15.785 0 0 0 4.963 2.521c.41-.564.773-1.16 1.084-1.785a10.63 10.63 0 0 1-1.706-.83c.143-.106.283-.217.418-.33a11.664 11.664 0 0 0 10.118 0c.137.113.277.224.418.33-.544.328-1.116.606-1.71.832a12.52 12.52 0 0 0 1.084 1.785 16.46 16.46 0 0 0 5.064-2.595 17.286 17.286 0 0 0-2.973-11.59ZM6.678 10.813a1.941 1.941 0 0 1-1.8-2.045 1.93 1.93 0 0 1 1.8-2.047 1.919 1.919 0 0 1 1.8 2.047 1.93 1.93 0 0 1-1.8 2.045Zm6.644 0a1.94 1.94 0 0 1-1.8-2.045 1.93 1.93 0 0 1 1.8-2.047 1.918 1.918 0 0 1 1.8 2.047 1.93 1.93 0 0 1-1.8 2.045Z" />
+                        </svg>
+                        <span class="sr-only">Discord community</span>
+                    </a>
+                    <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5">
+                        <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                            viewBox="0 0 20 17">
+                            <path fill-rule="evenodd"
+                                d="M20 1.892a8.178 8.178 0 0 1-2.355.635 4.074 4.074 0 0 0 1.8-2.235 8.344 8.344 0 0 1-2.605.98A4.13 4.13 0 0 0 13.85 0a4.068 4.068 0 0 0-4.1 4.038 4 4 0 0 0 .105.919A11.705 11.705 0 0 1 1.4.734a4.006 4.006 0 0 0 1.268 5.392 4.165 4.165 0 0 1-1.859-.5v.05A4.057 4.057 0 0 0 4.1 9.635a4.19 4.19 0 0 1-1.856.07 4.108 4.108 0 0 0 3.831 2.807A8.36 8.36 0 0 1 0 14.184 11.732 11.732 0 0 0 6.291 16 11.502 11.502 0 0 0 17.964 4.5c0-.177 0-.35-.012-.523A8.143 8.143 0 0 0 20 1.892Z"
+                                clip-rule="evenodd" />
+                        </svg>
+                        <span class="sr-only">Twitter page</span>
+                    </a>
+                    <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5">
+                        <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                            viewBox="0 0 20 20">
+                            <path fill-rule="evenodd"
+                                d="M10 .333A9.911 9.911 0 0 0 6.866 19.65c.5.092.678-.215.678-.477 0-.237-.01-1.017-.014-1.845-2.757.6-3.338-1.169-3.338-1.169a2.627 2.627 0 0 0-1.1-1.451c-.9-.615.07-.6.07-.6a2.084 2.084 0 0 1 1.518 1.021 2.11 2.11 0 0 0 2.884.823c.044-.503.268-.973.63-1.325-2.2-.25-4.516-1.1-4.516-4.9A3.832 3.832 0 0 1 4.7 7.068a3.56 3.56 0 0 1 .095-2.623s.832-.266 2.726 1.016a9.409 9.409 0 0 1 4.962 0c1.89-1.282 2.717-1.016 2.717-1.016.366.83.402 1.768.1 2.623a3.827 3.827 0 0 1 1.02 2.659c0 3.807-2.319 4.644-4.525 4.889a2.366 2.366 0 0 1 .673 1.834c0 1.326-.012 2.394-.012 2.72 0 .263.18.572.681.475A9.911 9.911 0 0 0 10 .333Z"
+                                clip-rule="evenodd" />
+                        </svg>
+                        <span class="sr-only">GitHub account</span>
+                    </a>
+                    <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5">
+                        <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                            viewBox="0 0 20 20">
+                            <path fill-rule="evenodd"
+                                d="M10 0a10 10 0 1 0 10 10A10.009 10.009 0 0 0 10 0Zm6.613 4.614a8.523 8.523 0 0 1 1.93 5.32 20.094 20.094 0 0 0-5.949-.274c-.059-.149-.122-.292-.184-.441a23.879 23.879 0 0 0-.566-1.239 11.41 11.41 0 0 0 4.769-3.366ZM8 1.707a8.821 8.821 0 0 1 2-.238 8.5 8.5 0 0 1 5.664 2.152 9.608 9.608 0 0 1-4.476 3.087A45.758 45.758 0 0 0 8 1.707ZM1.642 8.262a8.57 8.57 0 0 1 4.73-5.981A53.998 53.998 0 0 1 9.54 7.222a32.078 32.078 0 0 1-7.9 1.04h.002Zm2.01 7.46a8.51 8.51 0 0 1-2.2-5.707v-.262a31.64 31.64 0 0 0 8.777-1.219c.243.477.477.964.692 1.449-.114.032-.227.067-.336.1a13.569 13.569 0 0 0-6.942 5.636l.009.003ZM10 18.556a8.508 8.508 0 0 1-5.243-1.8 11.717 11.717 0 0 1 6.7-5.332.509.509 0 0 1 .055-.02 35.65 35.65 0 0 1 1.819 6.476 8.476 8.476 0 0 1-3.331.676Zm4.772-1.462A37.232 37.232 0 0 0 13.113 11a12.513 12.513 0 0 1 5.321.364 8.56 8.56 0 0 1-3.66 5.73h-.002Z"
+                                clip-rule="evenodd" />
+                        </svg>
+                        <span class="sr-only">Dribbble account</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cursor Box (hidden default) -->
+    <div id="cursorBox"
+        class="cursor-box h-auto  size-80 p-5 border border-white/20 bg-black/50 rounded-lg backdrop-blur-2xl shadow-lg fixed hidden pointer-events-none">
+        <img id="cursorImage" class="z-30 w-full h-auto cursor-img shadow-lg" />
+    </div>
+
+    <!-- Tambah di akhir body sebelum </body> -->
+    <script src="https://unpkg.com/split-type"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            if (!window.SplitType || !window.gsap) {
+                console.warn("GSAP atau SplitType belum termuat.");
+                return;
+            }
+
+            const texts = [
+                "Own Agentic AI<br>AI that thinks, plans,<br> and acts",
+                "Nikmati Perjalanan<br>Dengan Teknologi Cerdas",
+                "Temukan Tempat Baru<br>Dengan Bantuan AI",
+                "Rasakan Pengalaman<br>Interaktif & Real-Time"
+            ];
+
+            const descriptions = [
+                "AI yang mampu berpikir, merencanakan, dan bertindak layaknya agen cerdas.",
+                "Jelajahi dunia dengan teknologi AI yang memudahkan perjalananmu.",
+                "Temukan destinasi menarik baru yang dipersonalisasi dengan kecerdasan buatan.",
+                "Rasakan pengalaman interaktif real-time yang tidak pernah kamu bayangkan sebelumnya."
+            ];
+
+            const bigText = document.getElementById("bigText");
+            const descText = document.getElementById("descText");
+            const indicators = Array.from(document.querySelectorAll("#indicators > div"));
+
+            let index = 0;
+            let splitMain = null;
+            let splitDesc = null;
+            const INTERVAL_MS = 4000;
+            let timerId = null;
+
+            function setActiveIndicator(i) {
+                indicators.forEach((dot, idx) => {
+                    dot.classList.remove("bg-white", "bg-white/40");
+                    dot.classList.add(idx === i ? "bg-white" : "bg-white/40");
+                });
+            }
+
+            function animateIn() {
+                // Bersihkan split sebelumnya biar nggak dobel wrapper
+                if (splitMain) splitMain.revert();
+                if (splitDesc) splitDesc.revert();
+
+                // Ganti isi
+                bigText.innerHTML = texts[index];
+                descText.textContent = descriptions[index];
+
+                // Split baru
+                splitMain = new SplitType(bigText, {
+                    types: "words",
+                    tagName: "span"
+                });
+                splitDesc = new SplitType(descText, {
+                    types: "lines",
+                    tagName: "span"
+                });
+
+                // Animasi judul (per-word)
+                gsap.fromTo(
+                    splitMain.words, {
+                        y: "100%",
+                        opacity: 0
+                    }, {
+                        y: "0%",
+                        opacity: 1,
+                        duration: 0.6,
+                        ease: "power1.out",
+                        stagger: 0.05
+                    }
+                );
+
+
+                // Animasi deskripsi (per-line, sesuai permintaanmu)
+                gsap.from(splitDesc.lines, {
+                    opacity: 0.3,
+                    duration: 0.5,
+                    ease: "power1.out",
+                    stagger: 0.1,
+                    delay: 0.2
+                });
+            }
+
+            function next() {
+                index = (index + 1) % texts.length;
+                setActiveIndicator(index);
+                animateIn();
+            }
+
+            // Init
+            setActiveIndicator(0);
+            animateIn();
+
+            // Auto play
+            timerId = setInterval(next, INTERVAL_MS);
+
+            // Klik indikator
+            indicators.forEach((dot, i) => {
+                dot.addEventListener("click", () => {
+                    clearInterval(timerId);
+                    index = i;
+                    setActiveIndicator(i);
+                    animateIn();
+                    timerId = setInterval(next, INTERVAL_MS);
+                });
+            });
+        });
+
+        //  Cursor ======
+        const cursorBox = document.getElementById("cursorBox");
+        const cursorImg = document.getElementById("cursorImage");
+        const targets = document.querySelectorAll(".hover-target");
+
+        targets.forEach(target => {
+            target.addEventListener("mouseenter", () => {
+                const imgSrc = target.getAttribute("data-img");
+
+                cursorImg.src = imgSrc;
+
+                cursorBox.classList.remove("hidden");
+            });
+
+            target.addEventListener("mouseleave", () => {
+                cursorBox.classList.add("hidden");
+            });
+
+            target.addEventListener("mousemove", (e) => {
+                const offsetX = 20;
+                const offsetY = 20;
+
+                cursorBox.style.left = `${e.clientX + offsetX}px`;
+                cursorBox.style.top = `${e.clientY + offsetY}px`;
+            });
+        });
+
+        // tombol 
+        document.querySelectorAll(".btnGroup").forEach(container => {
+            const btns = container.querySelectorAll(".magnetBtn");
+
+            // Posisi awal tombol
+            btns.forEach(btn => {
+                const defaultLeft = container.offsetWidth - btn.offsetWidth;
+                const defaultTop = container.offsetHeight - btn.offsetHeight;
+
+                btn.style.left = `${defaultLeft}px`;
+                btn.style.top = `${defaultTop}px`;
+
+                btn.dataset.defaultLeft = defaultLeft;
+                btn.dataset.defaultTop = defaultTop;
+            });
+
+            container.addEventListener("mousemove", e => {
+                const rect = container.getBoundingClientRect();
+                let x = e.clientX - rect.left;
+                let y = e.clientY - rect.top;
+
+                btns.forEach(btn => {
+                    let newX = Math.min(Math.max(0, x), rect.width - btn.offsetWidth);
+                    let newY = Math.min(Math.max(0, y), rect.height - btn.offsetHeight);
+
+                    btn.style.left = `${newX}px`;
+                    btn.style.top = `${newY}px`;
+                });
+            });
+
+            container.addEventListener("mouseleave", () => {
+                btns.forEach(btn => {
+                    btn.style.left = `${btn.dataset.defaultLeft}px`;
+                    btn.style.top = `${btn.dataset.defaultTop}px`;
+                });
+            });
+        });
+    </script>
+
+
+
+</body>
+
+</html>
